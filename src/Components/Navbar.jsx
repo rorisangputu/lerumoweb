@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
     return (
-        <nav className="bg-bg">
+        <nav className="bg-[#efefef]">
             <div className="w-[90%] mx-auto py-1 flex justify-between items-center">
                 <div className='flex items-center'>
                     <img src={Logo} alt="" className='w-24' />
