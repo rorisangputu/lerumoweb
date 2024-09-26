@@ -5,7 +5,7 @@ import main from '../assets/maintenance.png';
 const WhoAreWe = () => {
     return (
         <div className="py-10">
-            <div className="container mx-auto p-6">
+            <div className="w-[90%] mx-auto p-6">
                 <section className="text-center my-12">
                     <h2 className="text-4xl font-semibold font-sans mb-6">Who we are</h2>
                     <p className="text-lg max-w-3xl mx-auto text-gray-600">
