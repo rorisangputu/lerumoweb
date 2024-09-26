@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         bg: "#f8f9fa",
-        bgsecondary: "#e9ecef",
+        bgsecondary: "#f2f2f2",
         componentbg: "#dee2e6",
         blue: "#0466c8"
       },
