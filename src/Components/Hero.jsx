@@ -10,7 +10,7 @@ const Hero = () => {
                     w-[700px]">
                     Expert Web Development Services for Your Business
                 </h1>
-                <p className="w-[55%]">
+                <p className="w-[55%] font-light">
                     Partner with our Experienced Team of Web Developers
                     to Build Your Brand's Unique Online Identity with Custom
                     Web Design, and Web Applications that Deliver Results
