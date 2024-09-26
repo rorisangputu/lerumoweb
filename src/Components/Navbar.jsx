@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 const Navbar = () => {
     return (
         <nav className="bg-bg">
-            <div className="w-[90%] mx-auto py-3 flex justify-between items-center">
+            <div className="w-[90%] mx-auto py-1 flex justify-between items-center">
                 <div className='flex items-center'>
                     <img src={Logo} alt="" className='w-24' />
                 </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {/* Get In Touch Button */}
-                <Button title="Get In Touch"
+                <Button title="Get in touch"
                     styles="hidden lg:block bg-blue 
                     text-white rounded-lg p-3 hover:bg-[#3880c9] hover:scale-105 duration-200"
                 />
