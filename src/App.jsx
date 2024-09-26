@@ -6,9 +6,9 @@ function App() {
 
 
   return (
-    <main>
+    <div className="overflow-x-hidden bg-bg">
       <Navbar />
-    </main>
+    </div>
   )
 }
 
