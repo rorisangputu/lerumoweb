@@ -1,7 +1,6 @@
-import React from 'react'
-import Logo from '../assets/LogoLerumo.png'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
-import { FaX } from 'react-icons/fa6'
+import Logo from '../assets/LogoLerumo.png';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+
 const Footer = () => {
     return (
         <div className='bg-gray-200 py-7'>
