@@ -3,6 +3,7 @@ import Button from './Button'
 import law from '../assets/LawCorp.jpeg';
 import handle from '../assets/WeHandle.jpeg';
 
+
 const Portfolio = () => {
     return (
         <div className='py-10 bg-gray-100'>
