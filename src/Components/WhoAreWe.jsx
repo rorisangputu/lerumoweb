@@ -1,15 +1,19 @@
 import mobi from '../assets/mobile-first.png';
 import mobidesign from '../assets/mobile.png';
 import main from '../assets/maintenance.png';
+import code from '../assets/code.png';
 
 const WhoAreWe = () => {
     return (
         <div className="py-10">
-            <div className="w-[90%] mx-auto p-6">
-                <section className="text-center my-12">
+            <div className="w-[90%] mx-auto">
+                <section className="text-center my-20 flex flex-col gap-7">
+                    <div className='flex items-center justify-center'>
+                        <img src={code} alt="" />
+                    </div>
                     <h2 className="text-4xl font-semibold font-sans mb-6">Who we are</h2>
                     <p className="text-lg max-w-3xl mx-auto text-gray-600">
-                        We specialize in small business web design and development for clients anywhere. Every line of code is written by hand to ensure the best performance, helping bring in more customers to your site and bring more revenue to your business.
+                        We specialize in small business web development for clients anywhere. Every line of code is written by hand to ensure the best performance, helping bring in more customers to your site and bring more revenue to your business.
                     </p>
 
 
