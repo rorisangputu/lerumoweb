@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
-
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <div className="overflow-x-hidden bg-bg">
       <Navbar />
       <Home />
+      <Footer />
     </div>
   )
 }
