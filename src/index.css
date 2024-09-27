@@ -14,3 +14,8 @@
         filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
     }
 }
+
+/* Custom CSS for diagonal cut */
+.clip-shape {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 90% 100%, 0 100%);
+}
