@@ -25,7 +25,7 @@ const Portfolio = () => {
                                     our ability to create fully functional and engaging corprate websites
                                 </p>
                             </div>
-                            <a href="#" className='text-left'>
+                            <a href="https://law-corp-09.vercel.app/" className='text-left'>
                                 <Button title="View" styles="text-blue bg-transparent border border-blue
                             rounded-lg py-2 px-7 hover:bg-blue hover:text-white " />
                             </a>
@@ -43,7 +43,7 @@ const Portfolio = () => {
                                     digital marketing solutions for brands in various industries.
                                 </p>
                             </div>
-                            <a href="#" className='text-left'>
+                            <a href="https://www.soundtour.co.za" className='text-left'>
                                 <Button title="View" styles="text-blue bg-transparent border border-blue
                             rounded-lg py-2 px-7 hover:bg-blue hover:text-white " />
                             </a>
