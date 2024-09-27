@@ -1,3 +1,4 @@
+import Connect from '../Components/Connect'
 import Hero from '../Components/Hero'
 import Portfolio from '../Components/Portfolio'
 import WhoAreWe from '../Components/WhoAreWe'
@@ -8,6 +9,7 @@ const Home = () => {
             <Hero />
             <WhoAreWe />
             <Portfolio />
+            <Connect />
         </div>
     )
 }
