@@ -11,9 +11,9 @@ const Footer = () => {
                             <img src={Logo} alt="" className='w-full h-full' />
                         </div>
                         <div className='flex gap-7'>
-                            <a href="" className='text-lg hover:text-gray-400'>Home</a>
-                            <a href="" className='text-lg hover:text-gray-400'>Services</a>
-                            <a href="" className='text-lg hover:text-gray-400'>Contact</a>
+                            <a href="/" className='text-lg hover:text-gray-400'>Home</a>
+                            <a href="/about" className='text-lg hover:text-gray-400'>About</a>
+                            <a href="/services" className='text-lg hover:text-gray-400'>Services</a>
                         </div>
                     </div>
                     <div className='flex justify-between'>
