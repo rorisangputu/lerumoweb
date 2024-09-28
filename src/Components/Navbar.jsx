@@ -40,17 +40,17 @@ const navlinks = [
     {
         id: 1,
         title: "Home",
-        link: "#"
+        link: "/"
     },
     {
         id: 2,
         title: "About",
-        link: "#"
+        link: "/about"
     },
     {
         id: 3,
         title: "Services",
-        link: "#"
+        link: "/services"
     },
 ]
 
