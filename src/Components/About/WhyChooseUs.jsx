@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={veri} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Expertise</h1>
-                            <p className="text-gray-600 text-lg max-w-2xl">
+                            <h1 className="font-light text-3xl">Attention to Detail</h1>
+                            <p className="text-gray-600 text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
@@ -43,8 +43,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={comm} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Expertise</h1>
-                            <p className="text-gray-600 text-lg max-w-2xl">
+                            <h1 className="font-light text-3xl">Communication</h1>
+                            <p className="text-gray-600 text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
@@ -54,8 +54,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={cust} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Expertise</h1>
-                            <p className="text-gray-600 text-lg max-w-2xl">
+                            <h1 className="font-light text-3xl">Customer Service</h1>
+                            <p className="text-gray-600 text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
