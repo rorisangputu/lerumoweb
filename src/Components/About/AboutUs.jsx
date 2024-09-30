@@ -32,8 +32,9 @@ const AboutUs = () => {
                                 that reflects their brand&apos;s personality and effectively communicates their
                                 message to their target audience
                             </p>
-                            <Button title="Get in touch" styles="rounded-lg border border-blue
-                            bg-transparent text-blue py-3 px-8 max-w-[10rem] hover:bg-blue hover:text-white"/>
+                            <Button title="Get in touch" styles="rounded-lg text-xl border border-blue
+                            bg-transparent text-blue py-4 px-4 max-w-[10rem] hover:bg-[#3880c9]
+                            hover:scale-105 duration-200 hover:text-white"/>
                         </div>
                     </div>
                 </div>
