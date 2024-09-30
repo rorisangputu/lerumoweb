@@ -1,11 +1,11 @@
-import mobi from '../assets/mobile-first.png';
-import mobidesign from '../assets/mobile.png';
-import main from '../assets/maintenance.png';
-import code from '../assets/code.png';
+import mobi from '../../assets/mobile-first.png';
+import mobidesign from '../../assets/mobile.png';
+import main from '../../assets/maintenance.png';
+import code from '../../assets/code.png';
 
 const WhoAreWe = () => {
     return (
-        <div className="py-10">
+        <div className="w-full">
             <div className="w-[90%] mx-auto">
                 <section className="text-center my-20 flex flex-col gap-7">
                     <div className='flex items-center justify-center'>
