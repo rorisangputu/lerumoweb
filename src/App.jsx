@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className="overflow-x-hidden bg-bg">
+    <div className="overflow-x-hidden bg-bg font-poppins">
       <Navbar />
       <div className="flex-grow">
         <Routes>
