@@ -3,7 +3,7 @@ import SocialMedia from '../../assets/SocialMedia.png'
 import WebAppImage from '../../assets/WebAppImage.png'
 const Service = () => {
     return (
-        <div className='py-10 bg-gray-100'>
+        <div className='py-20 bg-gray-100'>
             <div className='w-[90%] mx-auto '>
                 <div className='flex flex-col-reverse items-center lg:flex-row gap-6'>
                     {/* Services */}
