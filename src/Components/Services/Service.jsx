@@ -9,7 +9,7 @@ const Service = () => {
                     {/* Services */}
                     <div className="w-1/2 flex flex-col gap-5">
                         <div className='bg-white flex items-center p-6 gap-5 rounded-xl drop-shadow-md
-                            hover:scale-105 duration-200'>
+                            hover:drop-shadow-xl hover:scale-105 duration-200'>
                             <div className='h-20 w-20'>
                                 <img src={code} alt="" className='object-cover w-full h-full' />
                             </div>
@@ -23,7 +23,7 @@ const Service = () => {
                             </div>
                         </div>
                         <div className='bg-blue text-white flex items-center p-6 gap-5 
-                                rounded-xl drop-shadow-md hover:scale-105 duration-200'>
+                                rounded-xl drop-shadow-md hover:drop-shadow-xl hover:scale-105 duration-200'>
                             <div className='h-20 w-20'>
                                 <img src={WebAppImage} alt="" className='object-cover w-full h-full' />
                             </div>
@@ -38,7 +38,7 @@ const Service = () => {
                         </div>
 
                         <div className='bg-white flex items-center p-6 gap-5 rounded-xl drop-shadow-md
-                                hover:scale-105 duration-200'>
+                                hover:drop-shadow-xl hover:scale-105 duration-200'>
                             <div className='h-20 w-20'>
                                 <img src={SocialMedia} alt="" className='object-cover w-full h-[80%]' />
                             </div>
