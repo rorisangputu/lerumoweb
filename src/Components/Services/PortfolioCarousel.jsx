@@ -1,21 +1,21 @@
 import { Card, CardMedia, CardContent, Typography, Button, Box } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import Law from '../../assets/LawCorp.jpeg';
-import WeHandle from '../../assets/WeHandle.jpeg';
+import coinVue from '../../assets/coinVue.png';
 import SoundTour from '../../assets/soundtour.png';
 
 const portfolioItems = [
     {
         image: Law,
         name: 'Law Corp',
-        description: 'A brief description of Project 1.',
-        liveLink: '',
+        description: 'A mock website for a South African law firm, focusing on serious and catastrophic injury cases. The design features a modern layout with responsive design, including a dynamic "People" page showcasing the firms top attorneys',
+        liveLink: 'https://law-corp-09.vercel.app/',
     },
     {
-        image: WeHandle,
-        name: 'We Handle',
-        description: 'A brief description of Project 2.',
-        liveLink: '',
+        image: coinVue,
+        name: 'CoinVue',
+        description: 'CoinVue is a web application designed to provide real-time cryptocurrency market data and detailed information on various coins. Users can search for cryptocurrencies, view their prices in different currencies.',
+        liveLink: 'https://coinvue.vercel.app/',
     },
     {
         image: SoundTour,
@@ -27,31 +27,101 @@ const portfolioItems = [
 
 const PortfolioCarousel = () => {
     return (
-        <div>
-            <Carousel animation="slide" interval={3000} indicators={true}>
-                {portfolioItems.map((item, index) => (
-                    <Card key={index} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: 500, margin: 'auto', padding: 2 }}>
-                        <CardMedia
-                            component="img"
-                            image={item.image}
-                            alt={item.name}
-                            sx={{ height: 250, width: '100%', objectFit: 'cover', borderRadius: 2 }}
-                        />
-                        <CardContent sx={{ textAlign: 'center' }}>
-                            <Typography variant="h5" component="div" gutterBottom>
-                                {item.name}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }}>
-                                {item.description}
-                            </Typography>
-                            <Button variant="contained" color="primary" href={item.liveLink} target="_blank" rel="noopener noreferrer">
-                                View Live
-                            </Button>
-                        </CardContent>
-                    </Card>
-                ))}
-            </Carousel>
-        </div>
+        <div className="py-20">
+            <div className='w-[90%] mx-auto flex flex-col gap-5'>
+                <div className='flex flex-col'>
+                    <h1 className='text-7xl font-bold'>Portfolio.</h1>
+                    <p className='text-xl text-gray-600'>View our work.</p>
+                </div>
+                <Carousel
+                    animation="slide"
+                    interval={4000}
+                    indicators={true}
+                    navButtonsAlwaysVisible={true} // Show navigation buttons
+                    navButtonsProps={{
+                        style: {
+                            backgroundColor: '#000', // Change button background color
+                            color: '#fff', // Change button icon color
+                        }
+                    }}
+                    indicatorIconButtonProps={{
+                        style: {
+                            padding: '10px',    // Increase indicator size
+                            color: '#C4C4C4'    // Change indicator color
+                        }
+                    }}
+                    activeIndicatorIconButtonProps={{
+                        style: {
+                            color: '#4A90E2' // Active indicator color
+                        }
+                    }}
+                >
+                    {portfolioItems.map((item, index) => (
+                        <Card
+                            key={index}
+                            sx={{
+                                maxWidth: 800,
+                                Height: 1200,
+                                margin: 'auto',
+                                padding: 2,
+                                backgroundColor: '#ffffff',
+                                boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.1)',
+
+                            }}
+                        >
+                            <CardMedia
+                                component="img"
+                                image={item.image}
+                                alt={item.name}
+                                sx={{
+                                    height: 350,
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover'
+
+                                }}
+                            />
+                            <CardContent sx={{ textAlign: 'center', padding: '20px' }}>
+                                <Typography
+                                    variant="h5"
+                                    component="div"
+                                    gutterBottom
+                                    sx={{ fontWeight: 'bold', color: '#333' }}
+                                >
+                                    {item.name}
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                    sx={{ marginBottom: 2, color: '#555' }}
+                                >
+                                    {item.description}
+                                </Typography>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    href={item.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    disabled={!item.liveLink}
+                                    sx={{
+                                        backgroundColor: '#4A90E2',
+                                        '&:hover': {
+                                            backgroundColor: '#357ABD',
+                                        },
+                                        borderRadius: '20px',
+                                        padding: '10px 30px',
+                                    }}
+                                >
+                                    View Live
+                                </Button>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </Carousel>
+            </div>
+
+        </div >
 
     );
 }
