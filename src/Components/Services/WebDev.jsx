@@ -28,7 +28,6 @@ const WebDev = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }
