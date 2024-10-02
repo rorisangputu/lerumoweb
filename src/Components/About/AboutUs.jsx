@@ -34,7 +34,8 @@ const AboutUs = () => {
                             </p>
                             <Button title="Get in touch" styles="rounded-lg text-lg md:text-xl border border-blue
                             bg-transparent text-blue py-3 md:py-4 px-4 max-w-[10rem] hover:bg-[#3880c9]
-                            hover:scale-105 duration-200 hover:text-white"/>
+                            hover:scale-105 duration-200 hover:text-white"
+                                link="/contacts" />
                         </div>
                     </div>
                 </div>
