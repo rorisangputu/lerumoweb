@@ -9,7 +9,7 @@ const WebDev = () => {
                 justify-center gap-8'>
                     <div className='lg:w-1/2 flex flex-col items-center text-center lg:text-start lg:items-start gap-5'>
                         <h1 className='text-3xl px-10 lg:px-0 leading-none 
-                            lg:text-6 font-semibold lg:leading-[5rem]'
+                            lg:text-6xl font-semibold lg:leading-[5rem]'
                         >Web & App Development Done Differently</h1>
                         <p className='max-w-2xl text-lg md:text-xl text-gray-600'>
                             We meticulously write custom code line by line to our customers
