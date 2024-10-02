@@ -20,6 +20,7 @@ const Hero = () => {
                     styles="bg-blue 
                     text-white rounded-lg text-md md:text-lg px-6 py-3 md:py-4 hover:bg-[#3880c9]
                     hover:scale-105 duration-200"
+                    link='#contact'
                 />
             </div>
         </section>

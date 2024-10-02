@@ -28,7 +28,7 @@ const Connect = () => {
             );
     };
     return (
-        <div className='bg-gray-50 py-10'>
+        <div className='bg-gray-50 py-10' id='contact'>
             <div className='w-[90%] mx-auto flex items-center justify-center'>
                 {/* Contact Form Section */}
                 <div className='w-full md:h-[75vh] flex flex-col md:flex-row items-center justify-center gap-10'>

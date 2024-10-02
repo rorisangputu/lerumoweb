@@ -27,7 +27,7 @@ const portfolioItems = [
 
 const Porfolio = () => {
     return (
-        <Box className="w-full">
+        <Box className="w-full" id='work'>
             <Box className="grid grid-cols-1 md:grid-cols-2">
                 {portfolioItems.map((item, index) => (
                     <Box
