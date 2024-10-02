@@ -12,8 +12,8 @@ const Process = () => {
             <div className="w-[90%] mx-auto">
                 <div className="flex flex-col lg:flex-row gap-20">
                     {/* Left */}
-                    <div className="w-1/2 flex flex-col gap-5">
-                        <h1 className='text-[65px] font-semibold'>Process</h1>
+                    <div className="lg:w-1/2 flex flex-col gap-5">
+                        <h1 className='text-5xl lg:text-7xl font-semibold'>Process</h1>
                         <p className='text-xl text-gray-600 max-w-2xl'>
                             As a web developer, I follow a comprehensive and structured
                             working process to ensure that every project is delivered on
@@ -24,19 +24,19 @@ const Process = () => {
                             <Button title={"Our recent work"} styles="border border-blue
                                 rounded-lg text-blue py-4 px-3"/>
                         </a>
-                        <div className='h-[850px] w-[750px] mt-5 rounded-lg'>
+                        <div className='lg:h-[850px] lg:w-[750px] mt-5 rounded-lg'>
                             <img src={process} alt="" className='object-cover rounded-2xl' />
                         </div>
                     </div>
-                    <div className='w-1/2 flex flex-col gap-6 items-center justify-center'>
+                    <div className='lg:w-1/2 flex flex-col gap-6 items-center justify-center'>
                         {/* Discovery */}
-                        <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                        <div className='flex items-start'>
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={discovery} alt="" />
                             </div>
-                            <div className='flex flex-col gap-3'>
+                            <div className='flex flex-col px-4 gap-3'>
                                 <h1 className='text-2xl font-semibold'>Discovery</h1>
                                 <p className='text-lg leading-snug max-w-4xl text-gray-600'>
                                     During the discovery phase, I take the time to get to
@@ -49,8 +49,8 @@ const Process = () => {
                         </div>
                         {/* Planning */}
                         <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={Planning} alt="" />
                             </div>
@@ -66,8 +66,8 @@ const Process = () => {
                         </div>
                         {/* Design */}
                         <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={Design} alt="" />
                             </div>
@@ -84,8 +84,8 @@ const Process = () => {
                         </div>
                         {/* Development */}
                         <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={Development} alt="" />
                             </div>
@@ -102,8 +102,8 @@ const Process = () => {
                         </div>
                         {/* Testing */}
                         <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={Testing} alt="" />
                             </div>
@@ -119,8 +119,8 @@ const Process = () => {
                         </div>
                         {/* Launch */}
                         <div className='flex items-start gap-3'>
-                            <div className='h-[60px] w-[90px] flex 
-                                items-center justify-center bg-white rounded-2xl'
+                            <div className='h-10 w-20 md:h-[60px] md:w-[90px] flex 
+                                items-center justify-center md:bg-white rounded-2xl'
                             >
                                 <img src={Launch} alt="" />
                             </div>
