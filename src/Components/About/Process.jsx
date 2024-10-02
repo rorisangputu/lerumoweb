@@ -22,7 +22,8 @@ const Process = () => {
                         </p>
                         <a href="">
                             <Button title={"Our recent work"} styles="border border-blue
-                                rounded-lg text-blue py-4 px-3"/>
+                                rounded-lg text-blue py-4 px-3"
+                                link='services' />
                         </a>
                         <div className='lg:h-[850px] lg:w-[550px] 2xl:w-[750px] mt-5 rounded-lg'>
                             <img src={process} alt="" className='object-cover rounded-2xl' />
