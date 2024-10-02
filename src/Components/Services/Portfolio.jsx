@@ -34,7 +34,7 @@ const Portfolio = () => {
                     <p className='text-lg font-light'>Our recent work</p>
                 </div>
                 {portfolioItems.map((item, index) => (
-                    <div key={index} className="flex flex-col md:flex-row items-center gap-8">
+                    <div key={index} className="flex flex-col md:flex-row items-center gap-8 ">
                         {/* Image */}
                         <div className="w-full md:w-1/2">
                             <img src={item.image} alt={item.name} className="w-full h-auto rounded-lg shadow-lg" />
@@ -42,8 +42,10 @@ const Portfolio = () => {
 
                         {/* Project Info */}
                         <div className="w-full md:w-1/2 flex flex-col justify-center">
-                            <h3 className="text-3xl font-bold mb-4">{item.name}</h3>
-                            <p className="text-gray-600 mb-6">{item.description}</p>
+                            <div className='flex flex-col gap-3 my-4'>
+                                <h3 className="text-3xl font-bold">{item.name}</h3>
+                                <p className="text-gray-600 max-w-md ">{item.description}</p>
+                            </div>
                             <Button link={item.liveLink} title='View' styles="bg-blue w-[20%] text-center rounded-lg 
                             py-3 px-2 text-white text-lg" />
                         </div>
