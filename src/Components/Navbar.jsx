@@ -65,7 +65,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Sidebar Links */}
-                    <ul className="mt-10 flex flex-col gap-5 px-5">
+                    <ul className="mt-10 flex flex-col  px-5">
                         {navlinks.map((links) => (
                             <li key={links.id}>
                                 <a
@@ -81,7 +81,7 @@ const Navbar = () => {
                     </ul>
 
                     {/* Get in touch button in Sidebar */}
-                    <div className="mt-auto px-5">
+                    <div className="mt-5 px-5 ">
                         <Button
                             title="Get in touch"
                             styles="w-full bg-blue text-white rounded-lg p-3 
