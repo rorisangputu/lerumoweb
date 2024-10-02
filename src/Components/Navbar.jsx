@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../assets/LogoLerumo.png';
 import Button from './Button';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
