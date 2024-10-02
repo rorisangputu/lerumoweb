@@ -1,51 +1,66 @@
-import React, { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
 
 const ContactsForm = () => {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
+    const [isSent, setIsSent] = useState(false);
+    const [errorMessage, setErrorMessage] = useState(null);
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true); // Set loading to true when form is submitted
 
         emailjs
-            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-                publicKey: 'YOUR_PUBLIC_KEY',
+            .sendForm('service_zsqv07o', 'template_xj31qer', form.current, {
+                publicKey: '6Pbua8ueAgAzFgwdB',
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    setLoading(false); // Stop loading
+                    setIsSent(true); // Show success message
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
-                },
+                    setLoading(false); // Stop loading on error
+                    setErrorMessage('Failed to send the message. Please try again.'); // Show error message
+                    console.error('FAILED...', error.text);
+                }
             );
     };
+
     return (
         <div className='w-full bg-gray-100'>
             <div className='w-[90%] mx-auto py-10'>
-                {/* Contact Form Section */}
                 <div className='w-full md:h-[75vh] flex flex-col md:flex-row items-center justify-center gap-10'>
                     <div className='md:w-1/2'>
                         <h1 className='text-3xl md:text-5xl font-light'>Contact Us</h1>
-                        <p className='font-serif text-2xl md:text-4xl text-blue-900 italic'>We Want To Help You.</p>
+                        <p className='font-poppins text-blue text-2xl md:text-4xl text-blue-900 italic'>We Want To Help You.</p>
                     </div>
-                    <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full md:w-1/2 border p-4 gap-4'>
-                        <div className='flex flex-col md:flex-row gap-4'>
-                            <input type='text' name="fromName" placeholder='Name' className='w-full md:w-[48%] p-3 border rounded' />
-                            <input type='email' name="fromEmail" placeholder='Email' className='w-full md:w-[48%] p-3 border rounded' />
-                        </div>
-                        <textarea name="message" placeholder='Message' className='w-full p-3 border rounded' rows={6}></textarea>
 
-                        <button type='submit' value="Send" className='bg-black text-white p-4 rounded font-medium hover:bg-gray-800'>
-                            Submit
-                        </button>
-                    </form>
+                    {/* Form or Success Message */}
+                    {isSent ? (
+                        <div className='text-center'>
+                            <h2 className='text-2xl font-medium text-green-500'>Your message has been sent successfully!</h2>
+                        </div>
+                    ) : (
+                        <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full md:w-1/2 border p-4 gap-4'>
+                            <div className='flex flex-col md:flex-row gap-4'>
+                                <input type='text' name="fromName" placeholder='Name' className='w-full md:w-[48%] p-3 border rounded' required />
+                                <input type='email' name="fromEmail" placeholder='Email' className='w-full md:w-[48%] p-3 border rounded' required />
+                            </div>
+                            <textarea name="message" placeholder='Message' className='w-full p-3 border rounded' rows={6} required></textarea>
+
+                            <button type='submit' value="Send" className='bg-black text-white p-4 rounded font-medium hover:bg-gray-800' disabled={loading}>
+                                {loading ? 'Sending...' : 'Submit'}
+                            </button>
+                            {errorMessage && <p className='text-red-500 mt-2'>{errorMessage}</p>}
+                        </form>
+                    )}
                 </div>
 
                 {/* Address and Operation Times Section */}
                 <div className='w-full h-full mt-10 flex flex-col md:flex-row justify-between gap-7'>
-                    <div className='md:w-1/2 h-[40vh] md:h-[50vh] py-10 md:py-1 '>
+                    <div className='md:w-1/2 h-[40vh] md:h-[50vh] py-10 md:py-1'>
                         <iframe
                             title="location-map"
                             className="w-full h-full rounded-lg"
@@ -54,24 +69,15 @@ const ContactsForm = () => {
                             loading="lazy"
                         ></iframe>
                     </div>
-                    <div className='md:w-1/2'>
-                        <h2 className='text-2xl font-semibold mb-4'>Our Address</h2>
-                        <p className='font-light'>
-                            CommPark Suites, 56 Hatthaway Street,<br />
-                            Rosebank, Johannesburg<br />
-                            South Africa
-                        </p>
-                        <h2 className='text-2xl font-semibold mt-6 mb-4'>Operation Times</h2>
-                        <p className='font-light'>
-                            Monday - Friday: 9:00 AM - 5:00 PM<br />
-                            Saturday: 10:00 AM - 2:00 PM<br />
-                            Sunday: Closed
-                        </p>
+                    <div className='md:w-1/2 flex flex-col gap-3'>
+                        <h1 className='text-2xl md:text-4xl font-semibold'>Contact Details</h1>
+                        <p className='text-lg'>Email: Lerumo.it@gmail.com</p>
+                        <p className='text-lg'>No: (+27) 61-548-6843</p>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactsForm
+export default ContactsForm;
