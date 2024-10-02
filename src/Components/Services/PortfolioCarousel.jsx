@@ -20,7 +20,7 @@ const portfolioItems = [
     {
         image: SoundTour,
         name: 'Sound Tour',
-        description: 'A brief description of Project 3.',
+        description: 'We developed the website for the Sound Tour website that allows users to choose a streaming platform to stream a song.',
         liveLink: 'https://www.soundtour.co.za',
     },
 ];
@@ -29,21 +29,18 @@ const PortfolioCarousel = () => {
     return (
         <div className="py-20">
             <div className='w-[90%] mx-auto flex flex-col gap-5'>
-                <div className='flex flex-col'>
-                    <h1 className='text-7xl font-bold'>Portfolio.</h1>
-                    <p className='text-xl text-gray-600'>View our work.</p>
-                </div>
+
                 <Carousel
                     animation="slide"
                     interval={4000}
                     indicators={true}
-                    navButtonsAlwaysVisible={true} // Show navigation buttons
-                    navButtonsProps={{
-                        style: {
-                            backgroundColor: '#000', // Change button background color
-                            color: '#fff', // Change button icon color
-                        }
-                    }}
+                    // navButtonsAlwaysVisible={true} // Show navigation buttons
+                    // navButtonsProps={{
+                    //     style: {
+                    //         backgroundColor: '#000', // Change button background color
+                    //         color: '#fff', // Change button icon color
+                    //     }
+                    // }}
                     indicatorIconButtonProps={{
                         style: {
                             padding: '10px',    // Increase indicator size
@@ -61,13 +58,14 @@ const PortfolioCarousel = () => {
                             key={index}
                             sx={{
                                 maxWidth: 800,
-                                Height: 1200,
+                                minHeight: 600,
                                 margin: 'auto',
                                 padding: 2,
                                 backgroundColor: '#ffffff',
-                                boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.1)',
+
 
                             }}
+                            className='drop-shadow-md p-2'
                         >
                             <CardMedia
                                 component="img"
@@ -76,8 +74,7 @@ const PortfolioCarousel = () => {
                                 sx={{
                                     height: 350,
                                     width: '100%',
-                                    height: '100%',
-                                    objectFit: 'cover'
+                                    objectFit: 'contain'
 
                                 }}
                             />
