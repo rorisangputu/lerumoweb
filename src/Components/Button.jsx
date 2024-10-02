@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
 
-const Button = ({ title, styles }) => {
+const Button = ({ title, styles, link }) => {
     return (
-        <button className={styles}>
+        <a href={link} className={styles}>
             {title}
-        </button>
+        </a>
     )
 }
 
