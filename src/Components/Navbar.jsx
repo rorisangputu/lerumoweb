@@ -107,17 +107,17 @@ const navlinks = [
     {
         id: 1,
         title: 'Home',
-        link: '/',
+        link: "/",
     },
     {
         id: 2,
         title: 'About',
-        link: '/about',
+        link: "/about",
     },
     {
         id: 3,
         title: 'Services',
-        link: '/services',
+        link: "/services",
     },
 ];
 
