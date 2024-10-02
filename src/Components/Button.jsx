@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom"
+
 
 const Button = ({ title, styles, link }) => {
     return (
-        <a href={link} className={styles}>
+        <Link to={link} className={styles}>
             {title}
-        </a>
+        </Link>
     )
 }
 

@@ -3,6 +3,7 @@ import Logo from '../assets/LogoLerumo.png';
 import Button from './Button';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoMdClose } from 'react-icons/io'; // For close icon
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -24,13 +25,13 @@ const Navbar = () => {
                     <ul className="flex items-center gap-3">
                         {navlinks.map((links) => (
                             <li key={links.id}>
-                                <a
-                                    href={links.link}
+                                <Link
+                                    to={links.link}
                                     className="font-semibold text-lg inline-block py-2 px-3 
                                     hover:text-[#414141] relative group hover:scale-105 duration-200"
                                 >
                                     {links.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -68,14 +69,14 @@ const Navbar = () => {
                     <ul className="mt-10 flex flex-col  px-5">
                         {navlinks.map((links) => (
                             <li key={links.id}>
-                                <a
-                                    href={links.link}
+                                <Link
+                                    to={links.link}
                                     className="font-semibold text-lg block py-2 
                                     hover:text-blue-500 duration-200"
                                     onClick={handleSidebarToggle} // Close sidebar on link click
                                 >
                                     {links.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

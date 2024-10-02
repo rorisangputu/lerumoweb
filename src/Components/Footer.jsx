@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/LogoLerumo.png';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
@@ -11,9 +12,9 @@ const Footer = () => {
                             <img src={Logo} alt="" className='w-full h-full' />
                         </div>
                         <div className='flex gap-7'>
-                            <a href="/" className='text-lg hover:text-gray-400'>Home</a>
-                            <a href="/about" className='text-lg hover:text-gray-400'>About</a>
-                            <a href="/services" className='text-lg hover:text-gray-400'>Services</a>
+                            <Link to="/" className='text-lg hover:text-gray-400'>Home</Link>
+                            <Link to="/about" className='text-lg hover:text-gray-400'>About</Link>
+                            <Link to="/services" className='text-lg hover:text-gray-400'>Services</Link>
                         </div>
                     </div>
                     <div className='flex flex-col lg:flex-row items-center justify-between'>
