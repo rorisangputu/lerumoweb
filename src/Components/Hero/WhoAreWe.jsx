@@ -2,58 +2,56 @@ import mobi from '../../assets/mobile-first.png';
 import mobidesign from '../../assets/mobile.png';
 import main from '../../assets/maintenance.png';
 import code from '../../assets/code.png';
+import Logo from '../../assets/LogoLerumo.png';
 
 const WhoAreWe = () => {
     return (
         <div className="w-full">
             <div className="w-[90%] mx-auto">
-                <section className="text-center my-20 flex flex-col gap-7">
-                    <div className='flex items-center justify-center'>
-                        <img src={code} alt="" />
+                <section className="text-center my-20 flex flex-col gap-7 justify-center items-center">
+                    <div className='flex items-center justify-center h-40 w-40'>
+                        <img src={Logo} alt="Lerumo Tech Logo" className='w-full h-full' />
                     </div>
-                    <h2 className="text-4xl font-semibold font-sans mb-6">Who we are</h2>
-                    <p className="text-lg max-w-3xl mx-auto text-gray-600">
-                        We specialize in small business web development for clients anywhere. Every line of code is written by hand to ensure the best performance, helping bring in more customers to your site and bring more revenue to your business.
+                    <h2 className="text-4xl font-semibold font-sans mb-6">Who We Are</h2>
+                    <p className="text-lg lg:text-xl max-w-3xl mx-auto text-gray-600">
+                        At Lerumo Tech, we specialize in developing and maintaining high-quality corporate websites and web applications. As a boutique web development company, we focus on providing tailored digital solutions that help businesses thrive online. From sleek, professional designs to robust functionalities, we ensure your digital presence aligns with your brand’s goals and vision.
                     </p>
-
 
                     <div className="grid md:grid-cols-3 gap-6 mt-8">
                         <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
-
-                                <img src={mobidesign} alt="Mobile-First Design" className="mx-auto" />
+                                <img src={mobidesign} alt="Custom Web Design" className="mx-auto" />
                             </div>
-                            <h3 className="font-bold text-xl mb-2">Mobile-First Design</h3>
+                            <h3 className="font-bold text-xl mb-2">Custom Web Design</h3>
                             <p className="text-gray-600">
-                                We start building your site for mobile devices first, then we add on to it to make it tablet and desktop ready.
+                                We create visually engaging, user-friendly websites designed to reflect your brand's identity while offering seamless navigation for your users.
                             </p>
                         </div>
 
                         <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
-                                <img src={mobi} alt="Fully Responsive" className="mx-auto" />
+                                <img src={mobi} alt="Mobile Optimization" className="mx-auto" />
                             </div>
-                            <h3 className="font-bold text-xl mb-2">Fully Responsive</h3>
+                            <h3 className="font-bold text-xl mb-2">Mobile Optimization</h3>
                             <p className="text-gray-600">
-                                Your website will fit all mobile screens, tablets, and desktop sizes so new clients can access your site from anywhere.
+                                We prioritize mobile-first design, ensuring your website looks and performs great on all devices, from smartphones to desktops.
                             </p>
                         </div>
 
                         <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
-                                <img src={main} alt="Fully Responsive" className="mx-auto" />
+                                <img src={main} alt="Ongoing Support" className="mx-auto" />
                             </div>
-                            <h3 className="font-bold text-xl mb-2">Maintenance</h3>
+                            <h3 className="font-bold text-xl mb-2">Ongoing Support</h3>
                             <p className="text-gray-600">
-                                We conduct maintenance and updates to websites in the event that you may need to add new information.
+                                Our team offers continuous support, updates, and maintenance to ensure your website stays up to date and secure.
                             </p>
                         </div>
                     </div>
                 </section>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default WhoAreWe
+export default WhoAreWe;
