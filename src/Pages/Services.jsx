@@ -1,7 +1,7 @@
 import Hero from "../Components/Services/Hero"
 import WebDev from "../Components/Services/WebDev"
 import Service from "../Components/Services/Service"
-import PortfolioCarousel from "../Components/Services/PortfolioCarousel"
+import Porfolio from "../Components/Services/Porfolio"
 
 
 const Services = () => {
@@ -10,7 +10,7 @@ const Services = () => {
             <Hero />
             <WebDev />
             <Service />
-            <PortfolioCarousel />
+            <Porfolio />
         </div>
     )
 }
