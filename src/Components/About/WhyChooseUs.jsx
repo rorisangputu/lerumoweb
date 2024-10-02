@@ -9,8 +9,8 @@ const WhyChooseUs = () => {
             <div className="w-[90%] mx-auto">
                 <div className="flex flex-col gap-7">
                     <div className="flex flex-col justify-center items-center gap-8">
-                        <h1 className="text-[65px] font-semibold">Why Choose Us</h1>
-                        <p className="text-2xl text-gray-600">
+                        <h1 className="text-6xl lg:text-7xl font-semibold">Why Choose Us</h1>
+                        <p className="text-xl md:text-2xl text-gray-600">
                             Our experience, skills, and dedication set us apart and make us the
                             ideal choice for your project
                         </p>
@@ -21,8 +21,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={expert} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Expertise</h1>
-                            <p className="text-gray-600 text-2xl max-w-3xl">
+                            <h1 className="font-light text-2xl md:text-3xl">Expertise</h1>
+                            <p className="text-gray-600 text-xl md:text-2xl max-w-3xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={veri} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Attention to Detail</h1>
-                            <p className="text-gray-600 text-2xl max-w-2xl">
+                            <h1 className="font-light text-2xl md:text-3xl">Attention to Detail</h1>
+                            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
@@ -43,8 +43,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={comm} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Communication</h1>
-                            <p className="text-gray-600 text-2xl max-w-2xl">
+                            <h1 className="font-light text-2xl md:text-3xl">Communication</h1>
+                            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
@@ -54,8 +54,8 @@ const WhyChooseUs = () => {
                             rounded-full'>
                                 <img src={cust} alt="" />
                             </div>
-                            <h1 className="font-light text-3xl">Customer Service</h1>
-                            <p className="text-gray-600 text-2xl max-w-2xl">
+                            <h1 className="font-light text-2xl md:text-3xl">Customer Service</h1>
+                            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
                                 We have extensive experience in designing and developing website
                                 clients across various industries
                             </p>
