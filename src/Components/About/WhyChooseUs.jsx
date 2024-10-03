@@ -11,60 +11,51 @@ const WhyChooseUs = () => {
                     <div className="flex flex-col justify-center items-center gap-8">
                         <h1 className="text-6xl lg:text-7xl font-semibold">Why Choose Us</h1>
                         <p className="text-xl md:text-2xl text-gray-600">
-                            Our experience, skills, and dedication set us apart and make us the
-                            ideal choice for your project
+                            Our commitment to excellence and innovative solutions makes us the ideal partner for your projects.
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 gap-16 drop-shadow-lg py-9">
                         <div className="flex flex-col gap-4 bg-gray-200 p-6 rounded-xl">
-                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center
-                            rounded-full'>
-                                <img src={expert} alt="" />
+                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center rounded-full'>
+                                <img src={expert} alt="Expertise" />
                             </div>
                             <h1 className="font-light text-2xl md:text-3xl">Expertise</h1>
                             <p className="text-gray-600 text-xl md:text-2xl max-w-3xl">
-                                We have extensive experience in designing and developing website
-                                clients across various industries
+                                Our team has extensive experience in delivering tailored web solutions across various industries, ensuring your project receives the expert attention it deserves.
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 bg-gray-200 p-6 rounded-xl">
-                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center
-                            rounded-full'>
-                                <img src={veri} alt="" />
+                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center rounded-full'>
+                                <img src={veri} alt="Attention to Detail" />
                             </div>
                             <h1 className="font-light text-2xl md:text-3xl">Attention to Detail</h1>
                             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
-                                We have extensive experience in designing and developing website
-                                clients across various industries
+                                We meticulously focus on every detail of our projects, ensuring quality and precision in all aspects of design and functionality.
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 bg-gray-200 p-6 rounded-xl">
-                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center
-                            rounded-full'>
-                                <img src={comm} alt="" />
+                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center rounded-full'>
+                                <img src={comm} alt="Communication" />
                             </div>
                             <h1 className="font-light text-2xl md:text-3xl">Communication</h1>
                             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
-                                We have extensive experience in designing and developing website
-                                clients across various industries
+                                We prioritize clear and open communication with our clients, ensuring you are always informed and involved in the development process.
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 bg-gray-200 p-6 rounded-xl">
-                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center
-                            rounded-full'>
-                                <img src={cust} alt="" />
+                            <div className='-mt-[60px] bg-gray-100 w-[70px] h-[70px] flex items-center justify-center rounded-full'>
+                                <img src={cust} alt="Customer Service" />
                             </div>
                             <h1 className="font-light text-2xl md:text-3xl">Customer Service</h1>
                             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl">
-                                We have extensive experience in designing and developing website
-                                clients across various industries
+                                Our dedicated customer service team is here to support you every step of the way, providing prompt assistance and guidance tailored to your needs.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default WhyChooseUs
+export default WhyChooseUs;
