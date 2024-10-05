@@ -3,6 +3,8 @@ import Law from '../../assets/LawCorp.jpeg';
 import coinVue from '../../assets/coinVue.png';
 import SoundTour from '../../assets/soundtour.png';
 import BlueWorld from '../../assets/blueworld.png';
+import { motion } from 'framer-motion';
+
 
 const portfolioItems = [
     {
@@ -10,24 +12,28 @@ const portfolioItems = [
         name: 'Law Corp',
         description: 'A mock website for a South African law firm, focusing on serious and catastrophic injury cases.',
         liveLink: 'https://law-corp-09.vercel.app/',
+        duration: 0.8
     },
     {
         image: coinVue,
         name: 'CoinVue',
         description: 'CoinVue is a web application designed to provide real-time cryptocurrency market data.',
         liveLink: 'https://coinvue.vercel.app/',
+        duration: 1.2
     },
     {
         image: SoundTour,
         name: 'Sound Tour',
         description: 'We developed the website for Sound Tour, allowing users to choose a streaming platform.',
         liveLink: 'https://www.soundtour.co.za',
+        duration: 1.6
     },
     {
         image: BlueWorld,
         name: 'Blue World',
         description: 'This website was developed for a small business in Johannesburg. Blue World is sells alternative smoking devices such as vapes and pod systems.',
         liveLink: 'https://www.soundtour.co.za',
+        duration: 2
     },
 ];
 
@@ -52,7 +58,12 @@ const Portfolio = () => {
                     <div className="w-full 2xl:w-3/5">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                             {portfolioItems.map((item, index) => (
-                                <div key={index}
+                                <motion.div
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: item.duration, ease: "easeInOut" }}
+                                    viewport={{ once: true }}
+                                    key={index}
                                     className='relative group w-full h-56 md:h-96 lg:h-72 bg-cover bg-top 
                                     overflow-hidden flex justify-center items-center'
                                     style={{ backgroundImage: `url(${item.image})` }}
@@ -66,7 +77,7 @@ const Portfolio = () => {
                                         <Button link={item.liveLink} title={"Vist"} styles='px-4 py-2 text-white bg-blue text-md' />
                                     </div>
 
-                                </div>
+                                </motion.div>
                             ))}
 
                         </div>
