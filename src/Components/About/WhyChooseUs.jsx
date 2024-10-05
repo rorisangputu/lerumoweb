@@ -3,7 +3,8 @@ import comm from '../../assets/communication.png';
 import cust from '../../assets/customerservice.png';
 import veri from '../../assets/verified.png';
 import { motion } from 'framer-motion';
-import { FadeUp } from '../Home/Hero';
+import { FadeUp } from '../../Utils/framer';
+
 
 
 const WhyChooseUs = () => {
@@ -38,7 +39,7 @@ const WhyChooseUs = () => {
                             </p>
                         </motion.div>
                         <motion.div
-                            variants={FadeUp(0.6)}
+                            variants={FadeUp(0.3)}
                             initial="initial"
                             whileInView={"animate"}
                             viewport={{ once: true }}
@@ -52,7 +53,7 @@ const WhyChooseUs = () => {
                             </p>
                         </motion.div>
                         <motion.div
-                            variants={FadeUp(0.8)}
+                            variants={FadeUp(0.3)}
                             initial="initial"
                             whileInView={"animate"}
                             viewport={{ once: true }}
@@ -66,7 +67,7 @@ const WhyChooseUs = () => {
                             </p>
                         </motion.div>
                         <motion.div
-                            variants={FadeUp(1)}
+                            variants={FadeUp(0.3)}
                             initial="initial"
                             whileInView={"animate"}
                             viewport={{ once: true }}
