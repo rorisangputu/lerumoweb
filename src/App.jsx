@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="overflow-x-hidden bg-bg font-poppins">
+    <div className="overflow-x-hidden bg-bg font-spacegrotesk">
       <Navbar />
       <div className="flex-grow">
         <Routes>
