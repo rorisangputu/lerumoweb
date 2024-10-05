@@ -1,7 +1,6 @@
 import mobi from '../../assets/mobile-first.png';
-import mobidesign from '../../assets/mobile.png';
+import mobidesign from '../../assets/web-design.png';
 import main from '../../assets/maintenance.png';
-import code from '../../assets/code.png';
 import Logo from '../../assets/LogoLerumo.png';
 
 const WhoAreWe = () => {
