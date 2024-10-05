@@ -21,7 +21,7 @@ const Hero = () => {
                     variants={FadeUp(0.6)}
                     initial="initial"
                     animate="animate"
-                    className="text-sm md:text-md lg:w-[55%] lg:text-xl font-light">
+                    className="text-md md:text-lg lg:w-[55%] lg:text-xl font-light">
                     Partner with our Experienced Team of Web Developers
                     to Build Your Brand&apos;s Unique Online Identity with Custom
                     Web Design, and Web Applications that Deliver Results
