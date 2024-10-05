@@ -3,24 +3,9 @@ import mobidesign from '../../assets/web-design.png';
 import main from '../../assets/maintenance.png';
 import Logo from '../../assets/LogoLerumo.png';
 import { motion } from "framer-motion"
+import { SlideUp } from '../../Utils/framer';
 
-const SlideUp = (delay) => {
-    return {
-        initial: {
-            opacity: 0,
-            y: 50
-        },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.3,
-                delay: delay,
-                ease: "easeInOut",
-            },
-        },
-    }
-}
+
 const WhoAreWe = () => {
     return (
         <div className="w-full">
@@ -51,7 +36,7 @@ const WhoAreWe = () => {
                         </motion.div>
 
                         <motion.div
-                            variants={SlideUp(0.6)}
+                            variants={SlideUp(0.3)}
                             initial="initial"
                             whileInView={"animate"}
                             viewport={{ once: true }}
@@ -66,7 +51,7 @@ const WhoAreWe = () => {
                         </motion.div>
 
                         <motion.div
-                            variants={SlideUp(0.9)}
+                            variants={SlideUp(0.3)}
                             initial="initial"
                             whileInView={"animate"}
                             viewport={{ once: true }}
