@@ -23,7 +23,7 @@ const WhoAreWe = () => {
                             </div>
                             <h3 className="font-bold text-xl mb-2">Custom Web Design</h3>
                             <p className="text-gray-600">
-                                We create visually engaging, user-friendly websites designed to reflect your brand's identity while offering seamless navigation for your users.
+                                We create visually engaging, user-friendly websites designed to reflect your brand&apos;s identity while offering seamless navigation for your users.
                             </p>
                         </div>
 

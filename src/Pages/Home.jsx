@@ -1,9 +1,9 @@
 
-import Hero from '../Components/Hero/Hero'
-import Portfolio from '../Components/Hero/Portfolio'
-import WhoAreWe from '../Components/Hero/WhoAreWe'
-import Connect from '../Components/Hero/Connect'
-import Services from '../Components/Hero/Services'
+import Hero from '../Components/Home/Hero'
+import Portfolio from '../Components/Home/Portfolio'
+import WhoAreWe from '../Components/Home/WhoAreWe'
+import Connect from '../Components/Home/Connect'
+import Services from '../Components/Home/Services'
 
 const Home = () => {
     return (
