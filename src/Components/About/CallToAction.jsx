@@ -15,6 +15,7 @@ const CallToAction = () => {
                         styles="text-blue text-xl hover:text-white border
                         border-blue rounded-xl py-3 md:py-4 px-3 hover:bg-[#3880c9]
                         hover:scale-105 duration-200"
+                        link={'/contacts'}
                     />
                 </div>
             </div>
