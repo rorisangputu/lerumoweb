@@ -20,14 +20,14 @@ const portfolioItems = [
     {
         image: SoundTour,
         name: 'Sound Tour',
-        description: 'We developed the website for Sound Tour, allowing users to choose a streaming platform.',
+        description: 'We developed the website for Sound Tour, allowing users to choose a streaming platform. This solutions purpose was to direct traffic to a song which inevitably increased streams',
         liveLink: 'https://www.soundtour.co.za',
     },
     {
         image: BlueWorld,
         name: 'Blue World',
-        description: 'This website was developed for a small business in Johannesburg. Blue World is sells alternative smoking devices such as vapes and pod systems.',
-        liveLink: 'https://www.soundtour.co.za',
+        description: 'We developed this website for a small business in Johannesburg who needed a web solution which helped them increased sales. Blue World sells alternative smoking devices such as vapes and pod systems.',
+        liveLink: 'https://blueworld-coral.vercel.app/',
         duration: 1.4
     },
 ];
