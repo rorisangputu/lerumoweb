@@ -16,9 +16,11 @@ const Navbar = () => {
         <nav className="bg-gray-100">
             <div className="w-[90%] mx-auto py-1 flex justify-between items-center">
                 {/* Logo */}
-                <div className="flex items-center">
-                    <img src={Logo} alt="Logo" className="w-24" />
-                </div>
+                <Link to='/'>
+                    <div className="flex items-center">
+                        <img src={Logo} alt="Logo" className="w-24" />
+                    </div>
+                </Link>
 
                 {/* Desktop Nav Links */}
                 <div className="hidden lg:block">
