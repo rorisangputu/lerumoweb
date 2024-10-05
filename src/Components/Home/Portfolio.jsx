@@ -32,7 +32,7 @@ const portfolioItems = [
         image: BlueWorld,
         name: 'Blue World',
         description: 'This website was developed for a small business in Johannesburg. Blue World is sells alternative smoking devices such as vapes and pod systems.',
-        liveLink: 'https://www.soundtour.co.za',
+        liveLink: 'https://blueworld-coral.vercel.app/',
         duration: 1.4
     },
 ];
