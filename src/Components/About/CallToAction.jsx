@@ -2,7 +2,7 @@ import Button from '../Button'
 
 const CallToAction = () => {
     return (
-        <div className='bg-gray-100 py-16 lg:py-16 font-poppins'>
+        <div className='bg-gray-100 py-16 lg:py-16'>
             <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col justify-center items-center text-center gap-5'>
                     <h1 className='text-5xl lg:text-[75px] max-w-2xl lg:leading-[5rem]'>That&apos;s all about us feel free to say Hi!</h1>
