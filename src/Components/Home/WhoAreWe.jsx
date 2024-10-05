@@ -2,7 +2,25 @@ import mobi from '../../assets/mobile-first.png';
 import mobidesign from '../../assets/web-design.png';
 import main from '../../assets/maintenance.png';
 import Logo from '../../assets/LogoLerumo.png';
+import { motion } from "framer-motion"
 
+const SlideUp = (delay) => {
+    return {
+        initial: {
+            opacity: 0,
+            y: 50
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.3,
+                delay: delay,
+                ease: "easeInOut",
+            },
+        },
+    }
+}
 const WhoAreWe = () => {
     return (
         <div className="w-full">
@@ -17,7 +35,12 @@ const WhoAreWe = () => {
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-6 mt-8">
-                        <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
+                        <motion.div
+                            variants={SlideUp(0.3)}
+                            initial="initial"
+                            whileInView={"animate"}
+                            viewport={{ once: true }}
+                            className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
                                 <img src={mobidesign} alt="Custom Web Design" className="mx-auto" />
                             </div>
@@ -25,9 +48,14 @@ const WhoAreWe = () => {
                             <p className="text-gray-600">
                                 We create visually engaging, user-friendly websites designed to reflect your brand&apos;s identity while offering seamless navigation for your users.
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
+                        <motion.div
+                            variants={SlideUp(0.6)}
+                            initial="initial"
+                            whileInView={"animate"}
+                            viewport={{ once: true }}
+                            className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
                                 <img src={mobi} alt="Mobile Optimization" className="mx-auto" />
                             </div>
@@ -35,9 +63,14 @@ const WhoAreWe = () => {
                             <p className="text-gray-600">
                                 We prioritize mobile-first design, ensuring your website looks and performs great on all devices, from smartphones to desktops.
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
+                        <motion.div
+                            variants={SlideUp(0.9)}
+                            initial="initial"
+                            whileInView={"animate"}
+                            viewport={{ once: true }}
+                            className="bg-gray-100 p-6 flex flex-col items-center rounded-lg text-center">
                             <div className="mb-4 h-[50px] w-[50px] ">
                                 <img src={main} alt="Ongoing Support" className="mx-auto" />
                             </div>
@@ -45,7 +78,7 @@ const WhoAreWe = () => {
                             <p className="text-gray-600">
                                 Our team offers continuous support, updates, and maintenance to ensure your website stays up to date and secure.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
             </div>
