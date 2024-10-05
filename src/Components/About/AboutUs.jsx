@@ -1,5 +1,8 @@
-import Button from '../Button';
 import webdev from '../../assets/wede.png';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { FadeUp } from '../Home/Hero';
+
 const AboutUs = () => {
     return (
         <div className='bg-slate-50 py-16'>
@@ -32,10 +35,20 @@ const AboutUs = () => {
                                 that reflects their brand&apos;s personality and effectively communicates their
                                 message to their target audience
                             </p>
-                            <Button title="Get in touch" styles="rounded-lg text-lg md:text-xl border border-blue
-                            bg-transparent text-blue py-3 md:py-4 px-4 max-w-[10rem] hover:bg-[#3880c9]
-                            hover:scale-105 duration-200 hover:text-white"
-                                link="/contacts" />
+                            <Link to="/contacts">
+                                <motion.button
+                                    variants={FadeUp(0.3)}
+                                    initial="initial"
+                                    whileInView={"animate"}
+                                    viewport={{ once: true }}
+                                    className="rounded-lg text-lg md:text-xl border border-blue
+                                    bg-transparent text-blue py-3 md:py-4 px-4 max-w-[10rem] 
+                                    hover:bg-[#3880c9] hover:scale-105 duration-200 
+                                    hover:text-white"
+                                >
+                                    Get in touch
+                                </motion.button>
+                            </Link>
                         </div>
                     </div>
                 </div>

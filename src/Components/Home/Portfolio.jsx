@@ -19,21 +19,21 @@ const portfolioItems = [
         name: 'CoinVue',
         description: 'CoinVue is a web application designed to provide real-time cryptocurrency market data.',
         liveLink: 'https://coinvue.vercel.app/',
-        duration: 1.2
+        duration: 1
     },
     {
         image: SoundTour,
         name: 'Sound Tour',
         description: 'We developed the website for Sound Tour, allowing users to choose a streaming platform.',
         liveLink: 'https://www.soundtour.co.za',
-        duration: 1.6
+        duration: 1.2
     },
     {
         image: BlueWorld,
         name: 'Blue World',
         description: 'This website was developed for a small business in Johannesburg. Blue World is sells alternative smoking devices such as vapes and pod systems.',
         liveLink: 'https://www.soundtour.co.za',
-        duration: 2
+        duration: 1.4
     },
 ];
 

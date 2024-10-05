@@ -2,6 +2,7 @@ import Button from '../Button';
 import Law from '../../assets/LawCorp.jpeg';
 import coinVue from '../../assets/coinVue.png';
 import SoundTour from '../../assets/soundtour.png';
+import BlueWorld from '../../assets/blueworld.png';
 
 const portfolioItems = [
     {
@@ -21,6 +22,13 @@ const portfolioItems = [
         name: 'Sound Tour',
         description: 'We developed the website for Sound Tour, allowing users to choose a streaming platform.',
         liveLink: 'https://www.soundtour.co.za',
+    },
+    {
+        image: BlueWorld,
+        name: 'Blue World',
+        description: 'This website was developed for a small business in Johannesburg. Blue World is sells alternative smoking devices such as vapes and pod systems.',
+        liveLink: 'https://www.soundtour.co.za',
+        duration: 1.4
     },
 ];
 
