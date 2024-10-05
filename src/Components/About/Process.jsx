@@ -7,47 +7,8 @@ import Development from '../../assets/development.png';
 import Testing from '../../assets/testing.png';
 import Launch from '../../assets/launch.png';
 import { motion } from 'framer-motion';
+import { SlideLeft, SlideRight } from '../../Utils/framer';
 
-
-
-const SlideLeft = (delay) => {
-    return {
-        initial: {
-            opacity: 0,
-            x: -50
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                type: "spring",
-                stiffness: 100,
-                duration: 0.5,
-                delay: delay,
-                ease: "easeInOut"
-            }
-        },
-    };
-};
-const SlideRight = (delay) => {
-    return {
-        initial: {
-            opacity: 0,
-            x: 50
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                type: "spring",
-                stiffness: 100,
-                duration: 0.5,
-                delay: delay,
-                ease: "easeInOut"
-            }
-        },
-    };
-};
 const Process = () => {
     return (
         <div className="bg-slate-50 py-10">
