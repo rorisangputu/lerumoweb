@@ -1,5 +1,8 @@
 import Button from '../Button';
 import webdev from '../../assets/webdev.png';
+import { motion } from 'framer-motion';
+import { SlideLeft, SlideRight } from '../../Utils/framer';
+
 
 const WebDev = () => {
     return (
@@ -7,7 +10,12 @@ const WebDev = () => {
             <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col lg:flex-row items-center
                 justify-center gap-8'>
-                    <div className='lg:w-1/2 flex flex-col items-center text-center lg:text-start lg:items-start gap-5'>
+                    <motion.div
+                        variants={SlideLeft(0.2)}
+                        initial="initial"
+                        whileInView={"animate"}
+                        viewport={{ once: true }}
+                        className='lg:w-1/2 flex flex-col items-center text-center lg:text-start lg:items-start gap-5'>
                         <h1 className='text-3xl px-10 lg:px-0 leading-none 
                             lg:text-6xl font-semibold lg:leading-[5rem]'
                         >Web & App Development Done Differently</h1>
@@ -22,14 +30,22 @@ const WebDev = () => {
                             border-blue rounded-xl py-3 md:py-4 px-3 hover:bg-[#3880c9]
                             hover:scale-105 duration-200"
                         />
-                    </div>
-                    <div className='lg:w-1/2 flex items-center justify-center'>
+                    </motion.div>
+                    <motion.div
+                        variants={SlideRight(0.4)}
+                        initial="initial"
+                        whileInView={"animate"}
+                        viewport={{ once: true }}
+                        className='lg:w-1/2 flex items-center justify-center'>
                         <img src={webdev} alt="" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
     )
 }
+
+
+
 
 export default WebDev
