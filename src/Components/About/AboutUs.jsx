@@ -1,7 +1,8 @@
 import webdev from '../../assets/wede.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FadeUp } from '../Home/Hero';
+import { FadeUp } from '../../Utils/framer';
+
 
 const AboutUs = () => {
     return (
@@ -15,7 +16,7 @@ const AboutUs = () => {
                             solutions that drive business success.
                         </p>
                     </div>
-                    <div className='flex flex-col md:flex-row gap-3 items-center'>
+                    <div className='flex flex-col lg:flex-row gap-3 items-center'>
                         <div className='lg:w-1/2'>
                             <img src={webdev} alt="" />
                         </div>
