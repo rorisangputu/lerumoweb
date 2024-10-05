@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        spacegrotesk: ["Space Grotesk", "san-serif"]
       },
       colors: {
         bg: "#f8f9fa",
